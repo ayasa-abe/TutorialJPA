@@ -24,6 +24,7 @@ public class CountryController {
         model.addAttribute("countrylist", service.getCountryList());
         // country/list.htmlに画面遷移
         return "country/list";
+
     }
 
  // ----- 詳細画面 -----
@@ -64,4 +65,5 @@ public class CountryController {
         // 一覧画面にリダイレクト
         return "redirect:/country/list";
     }
+
 }
